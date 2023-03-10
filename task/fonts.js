@@ -7,7 +7,7 @@ import newer from "gulp-newer";
 import fonter from "gulp-fonter";
 import ttf2woff2 from "gulp-ttf2woff2";
 
-export const font = () => {
+export const fonts = () => {
     return gulp
         .src(path.font.src)
         .pipe(newer(path.img.dest))
