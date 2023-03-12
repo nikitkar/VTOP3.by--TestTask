@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sing up</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="singup">
+        <aside class="aside">
+          <h1 class="aside-title">Sign up</h1>
+        </aside>
+
+        <div class="singup-wrap">
+          <div class="singup-top">
+            <h3 class="singup-title">New user?</h3>
+            <p class="singup-title_sub">
+              Use the form below to create your account.
+            </p>
+
+            <form class="form" action="">
+              <div class="input-component">
+                <label class="input-label">First Name</label>
+                <input class="input-input" type="text" name="firstName" />
+              </div>
+
+              <div class="input-component">
+                <label class="input-label">Last Name</label>
+                <input class="input-input" type="text" name="lastName" />
+              </div>
+
+              <div class="input-component">
+                <label class="input-label">Nationality</label>
+                <input class="input-input" type="text" name="nationality" />
+              </div>
+
+              <div class="input-component">
+                <label class="input-label">E-mail</label>
+                <input class="input-input" type="email" name="email" />
+              </div>
+
+              <div class="input-component">
+                <label class="input-label">Date of Birth</label>
+                <div class="input-component__wrap">
+                  <input class="input-input" type="date" />
+                  <input class="input-input" type="datetime" />
+                  <input class="input-input" type="month" />
+                  <input class="input-input" type="week" />
+                </div>
+              </div>
+
+              <div class="input-component">
+                <label class="input-label">Gender</label>
+                <div class="input-component__wrap">
+                  <div class="input-component__wrap-w">
+                    <input class="input-checkbox" type="checkbox" name="male" />
+                    <label>Male</label>
+                  </div>
+                  <div class="input-component__wrap-w">
+                    <input
+                      class="input-checkbox"
+                      type="checkbox"
+                      name="female"
+                    />
+                    <label>Female</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-component">
+                <label class="input-label">Password</label>
+                <input class="input-input" type="password" />
+              </div>
+
+              <div class="input-component">
+                <label class="input-label">Confirm Password</label>
+                <input class="input-input" type="password" />
+              </div>
+            </form>
+          </div>
+          <div class="singup-bottom">
+            <p class="singup-bottom__content">
+              Have an account? <a href="/">Login</a>
+            </p>
+
+            <button class="singup-button btn">Complete Signup</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
