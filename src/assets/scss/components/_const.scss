@@ -1,4 +1,6 @@
+@import "./fonts";
 @import "./mixin";
+@import "./const";
 
 .aside-title {
   @include font($size-title_aside, 400 "PT_Sans");
