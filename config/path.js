@@ -10,6 +10,11 @@ export default {
     dest: pathDest,
   },
 
+  js: {
+    src: pathSrc + "/assets/scripts/*.js",
+    watch: pathSrc + "/assets/scripts/**/*.js",
+    dest: pathDest + "/styles",},
+
   scss: {
     src: pathSrc + "/assets/scss/*.scss",
     watch: pathSrc + "/assets/scss/**/*.scss",
