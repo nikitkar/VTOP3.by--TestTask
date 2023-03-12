@@ -1,0 +1,39 @@
+@import "./mixin";
+
+.aside-title {
+  @include font($size-title_aside, 400 "PT_Sans");
+  letter-spacing: 0.5px;
+
+  color: $color-white;
+}
+
+.main-title {
+  @include font($size-title_main, 500);
+
+  letter-spacing: -0.46px;
+
+  color: $color-main_text;
+}
+
+.input-label {
+  @include font($size-label_input, 300);
+
+  color: $color-label_input;
+}
+
+.input-text {
+  @include font($size-input_text, 400);
+
+  color: $color-main_text;
+}
+
+.btn {
+  @include displayFlex(center, center, column);
+  padding: 7px 25px;
+
+  background-color: $color-btn;
+
+  @include font($size-btn_text, 400 "PT_Sans");
+
+  color: $color-white;
+}
