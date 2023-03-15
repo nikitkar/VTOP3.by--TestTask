@@ -9,8 +9,8 @@ import gulpif from "gulp-if";
 
 export const images = () => {
   return gulp
-    .src(path.img.src)
-    .pipe(newer(path.img.dest))
+    .src(path.images.src)
+    .pipe(newer(path.images.dest))
     .pipe(gulpif(app.isProd, imagemin()))
-    .pipe(gulp.dest(path.img.dest));
+    .pipe(gulp.dest(path.images.dest));
 };

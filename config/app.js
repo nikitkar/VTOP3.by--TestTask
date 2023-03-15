@@ -9,6 +9,10 @@ export default {
     collapseWhitespace: isProd, // убираем все пробелы
   },
 
+  webpack: {
+    mode: "development",
+  },
+
   fonter: {
     formats: ["ttf", "woff", "eot", "svg"],
   },

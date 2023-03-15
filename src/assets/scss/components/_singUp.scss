@@ -1,3 +1,72 @@
 @import "./fonts";
 @import "./mixin";
 @import "./const";
+@import "./variables";
+
+.singup {
+  max-width: 665px;
+  width: 100%;
+  
+  display: grid;
+  grid-template-columns: 137px auto;
+
+  background-color: $color-white;
+
+  &-wrap {
+    @include displayFlex(flex-start, space-between, column);
+    gap: 40px;
+
+    width: 100%;
+
+    padding: 39px 22px 33px 21px;
+  }
+
+  &-top {
+    @include displayFlex(flex-start, flex-start, column);
+    gap: 20px;
+
+    width: 100%;
+  }
+
+  &-title {
+    &__wrap {
+      @include displayFlex(flex-start, flex-start, column);
+    }
+
+    &_sub{
+        @include font($size-main_text, 300);
+
+        color: $color-main_text;
+    }
+  }
+
+  .form{
+    @include displayFlex(flex-start, flex-start, column);
+    flex-flow: wrap;
+
+    column-gap: 13px;
+    row-gap: 16px;
+
+    width: 100%;
+  }
+
+  &-bottom {
+    @include displayFlex(center, space-between);
+    gap: 50px;
+
+    width: 100%;
+
+    &__content {
+      @include font(13px, 300);
+
+      color: $color-black;
+
+      & a {
+        font-weight: 500;
+        text-decoration-line: underline;
+
+        color: $color-active;
+      }
+    }
+  }
+}

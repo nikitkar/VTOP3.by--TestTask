@@ -13,7 +13,8 @@ export default {
   js: {
     src: pathSrc + "/assets/scripts/*.js",
     watch: pathSrc + "/assets/scripts/**/*.js",
-    dest: pathDest + "/styles",},
+    dest: pathDest + "/scripts",
+  },
 
   scss: {
     src: pathSrc + "/assets/scss/*.scss",

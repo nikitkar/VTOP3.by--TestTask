@@ -9,10 +9,10 @@ import ttf2woff2 from "gulp-ttf2woff2";
 
 export const fonts = () => {
     return gulp
-        .src(path.font.src)
-        .pipe(newer(path.img.dest))
+        .src(path.fonts.src)
+        .pipe(newer(path.images.dest))
         .pipe(fonter(app.fonter))
-        .pipe(gulp.dest(path.font.dest))
+        .pipe(gulp.dest(path.fonts.dest))
         .pipe(ttf2woff2())
-        .pipe(gulp.dest(path.font.dest));
+        .pipe(gulp.dest(path.fonts.dest));
 };

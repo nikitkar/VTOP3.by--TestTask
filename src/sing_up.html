@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sing up</title>
+
+    <link rel="stylesheet" href="./styles/all.min.css" />
   </head>
   <body>
     <main class="main">
@@ -15,71 +17,153 @@
 
         <div class="singup-wrap">
           <div class="singup-top">
-            <h3 class="singup-title">New user?</h3>
-            <p class="singup-title_sub">
-              Use the form below to create your account.
-            </p>
+            <div class="singup-title__wrap">
+              <h3 class="singup-title main-title">New user?</h3>
+              <p class="singup-title_sub">
+                Use the form below to create your account.
+              </p>
+            </div>
 
-            <form class="form" action="">
+            <form class="form">
               <div class="input-component">
                 <label class="input-label">First Name</label>
-                <input class="input-input" type="text" name="firstName" />
+                <input
+                  class="input-input input-text"
+                  type="text"
+                  name="firstName"
+                />
+                <span class="input-correct"></span>
               </div>
 
               <div class="input-component">
                 <label class="input-label">Last Name</label>
-                <input class="input-input" type="text" name="lastName" />
+                <input
+                  class="input-input input-text"
+                  type="text"
+                  name="lastName"
+                />
+                <span class="input-correct"></span>
               </div>
 
               <div class="input-component">
                 <label class="input-label">Nationality</label>
-                <input class="input-input" type="text" name="nationality" />
-              </div>
+                <div class="input-select" data-state="">
+                  <div class="input-select__title" data-default=""></div>
 
-              <div class="input-component">
-                <label class="input-label">E-mail</label>
-                <input class="input-input" type="email" name="email" />
-              </div>
+                  <div class="input-select__content">
+                    <input
+                      id="singleSelect0"
+                      class="input-select__input"
+                      type="radio"
+                      name="singleSelect"
+                      checked
+                    />
+                    <label for="singleSelect0" class="input-select__label"
+                      >Argentina</label
+                    >
 
-              <div class="input-component">
-                <label class="input-label">Date of Birth</label>
-                <div class="input-component__wrap">
-                  <input class="input-input" type="date" />
-                  <input class="input-input" type="datetime" />
-                  <input class="input-input" type="month" />
-                  <input class="input-input" type="week" />
+                    <input
+                      id="singleSelect0"
+                      class="input-select__input"
+                      type="radio"
+                      name="singleSelect"
+                      checked
+                    />
+                    <label for="singleSelect0" class="input-select__label"
+                      >Spanish</label
+                    >
+
+                    <input
+                      id="singleSelect0"
+                      class="input-select__input"
+                      type="radio"
+                      name="singleSelect"
+                      checked
+                    />
+                    <label for="singleSelect0" class="input-select__label"
+                      >Brazil</label
+                    >
+
+                    <input
+                      id="singleSelect0"
+                      class="input-select__input"
+                      type="radio"
+                      name="singleSelect"
+                      checked
+                    />
+                    <label for="singleSelect0" class="input-select__label"
+                      >England</label
+                    >
+
+                    <input
+                      id="singleSelect0"
+                      class="input-select__input"
+                      type="radio"
+                      name="singleSelect"
+                      checked
+                    />
+                    <label for="singleSelect0" class="input-select__label"
+                      >Russia</label
+                    >
+                  </div>
                 </div>
               </div>
 
               <div class="input-component">
+                <label class="input-label">E-mail</label>
+                <input
+                  class="input-input input-text"
+                  type="email"
+                  name="email"
+                />
+                <span class="input-correct"></span>
+              </div>
+
+              <div class="input-component">
+                <label class="input-label">Date of Birth</label>
+                <div class="input-component__wrap"></div>
+              </div>
+
+              <div class="input-component">
                 <label class="input-label">Gender</label>
-                <div class="input-component__wrap">
-                  <div class="input-component__wrap-w">
-                    <input class="input-checkbox" type="checkbox" name="male" />
-                    <label>Male</label>
-                  </div>
-                  <div class="input-component__wrap-w">
+                <div class="input-component__wrap-radio">
+                  <div class="input-component__wrap-radio_w">
                     <input
-                      class="input-checkbox"
-                      type="checkbox"
-                      name="female"
+                      class="input-radio"
+                      id="male"
+                      type="radio"
+                      name="radio"
+                      value="1"
                     />
-                    <label>Female</label>
+                    <label class="input-radio_text" for="male">Male</label>
+                  </div>
+                  <div class="input-component__wrap-radio_w">
+                    <input
+                      class="input-radio"
+                      id="female"
+                      type="radio"
+                      name="radio"
+                      value="2"
+                    />
+                    <label class="input-radio_text" for="female">Female</label>
                   </div>
                 </div>
               </div>
 
               <div class="input-component">
                 <label class="input-label">Password</label>
-                <input class="input-input" type="password" />
+                <input class="input-input input-text" type="password" />
+                <span class="input-correct"></span>
               </div>
 
               <div class="input-component">
                 <label class="input-label">Confirm Password</label>
-                <input class="input-input" type="password" />
+                <input class="input-input input-text" type="password" />
+                <span class="input-correct"></span>
               </div>
             </form>
           </div>
+
           <div class="singup-bottom">
             <p class="singup-bottom__content">
               Have an account? <a href="/">Login</a>
@@ -90,5 +174,7 @@
         </div>
       </section>
     </main>
+
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
